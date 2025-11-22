@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Suit';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@keyframes loadimg {
+  0% {
+    transform: translate(-50%, 1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes loadtext {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bodyColorChange {
+  0% {
+    background-color: #f8f7b9;
+  }
+  100% {
+    background-color: #9dfa9d;
+  }
+}
+
+body{
+    background-color: #f8f7b9;
+    font-family: 'omyu_pretty';
+    animation: bodyColorChange 8s ease-in-out forwards infinite alternate;
+}
+
+#textBox{
+    animation: loadtext 1.5s ease 0.6s ;
+}
+
+#mainText{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 4%;
+}
+
+#subText{
+    font-size: 2.75vw;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#backImg{
+    display: block;
+    position: fixed;
+    width: 45%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    animation: loadimg 1.5s ease 0.6s ;
+    transition: width 0.3s ease-in-out;
+}
+
+#backImg:hover{
+    width: 47.5%;
+    transition: width 0.3s ease-in-out;
+}
+
+#footer{
+    font-family: "Suit";
+    display: block;
+    position: fixed;
+    left: 3%;
+    bottom: 3%;
+    color: #1b1b1b;
+}
+
+#footer a{
+    text-decoration: none;
+    color: #777777;
+}

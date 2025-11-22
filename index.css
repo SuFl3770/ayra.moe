@@ -29,6 +29,7 @@
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -48,19 +49,20 @@ body{
 }
 
 #textBox{
-    animation: loadtext 1.5s ease 0.6s ;
+    animation: loadtext 1.5s ease 0.6s forwards;
+    opacity: 0;
 }
 
 #mainText{
     font-size: 4vw;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 2vw;
 }
 
 #subText{
     font-size: 2.75vw;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 1vw;
 }
 
 #backImg{
@@ -69,8 +71,9 @@ body{
     width: 45%;
     left: 50%;
     bottom: 0px;
+    opacity: 0;
     transform: translateX(-50%);
-    animation: loadimg 1.5s ease 0.6s ;
+    animation: loadimg 1.5s ease 0.6s forwards;
     transition: width 0.3s ease-in-out;
 }
 
